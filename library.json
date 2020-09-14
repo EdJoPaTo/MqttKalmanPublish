@@ -1,0 +1,28 @@
+{
+    "name": "MqttKalmanPublish",
+    "description": "publish values via a kalman filter to mqtt",
+    "version": "0.1.0",
+    "keywords": [
+        "mqtt",
+        "kalman",
+        "publish"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EdJoPaTo/MqttKalmanPublish.git"
+    },
+    "frameworks": "arduino",
+    "platforms": "*",
+    "dependencies": [
+        {
+            "owner": "plapointe6",
+            "name": "EspMQTTClient",
+            "version": "^1.8.0"
+        },
+        {
+            "owner": "denyssene",
+            "name": "SimpleKalmanFilter",
+            "version": "^0.1.0"
+        }
+    ]
+}
