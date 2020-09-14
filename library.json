@@ -1,7 +1,7 @@
 {
     "name": "MqttKalmanPublish",
-    "description": "publish values via a kalman filter to mqtt",
     "version": "0.1.0",
+    "description": "publish values via a kalman filter to mqtt",
     "keywords": [
         "mqtt",
         "kalman",
@@ -11,6 +11,15 @@
         "type": "git",
         "url": "https://github.com/EdJoPaTo/MqttKalmanPublish.git"
     },
+    "authors": [
+        {
+            "name": "EdJoPaTo",
+            "email": "mqtt-kalman-publish-arduino-library@edjopato.de",
+            "url": "https://edjopato.de",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
     "frameworks": "arduino",
     "platforms": "*",
     "dependencies": [
