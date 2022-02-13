@@ -10,8 +10,8 @@ private:
     const char* topic;
     const bool retained;
 
-    const int publishEveryN;
-    int currentCount = 0;
+    const size_t publishEveryN;
+    size_t currentCount = 0;
 
     SimpleKalmanFilter kalman;
     const float kalmanInitialError;
@@ -20,7 +20,7 @@ public:
         EspMQTTClient& client,
         const char* topic,
         const bool retained,
-        const int publishEveryN,
+        const size_t publishEveryN,
         const float kalmanSensitivity,
         const float kalmanInitialError,
         const float kalmanInitialQ
@@ -30,7 +30,7 @@ public:
         EspMQTTClient& client,
         const char* topic,
         const bool retained,
-        const int publishEveryN,
+        const size_t publishEveryN,
         const float kalmanSensitivity
     );
 

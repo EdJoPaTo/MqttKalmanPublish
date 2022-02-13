@@ -7,7 +7,7 @@ MQTTKalmanPublish::MQTTKalmanPublish(
     EspMQTTClient& client,
     const char* topic,
     const bool retained,
-    const int publishEveryN,
+    const size_t publishEveryN,
     const float kalmanSensitivity,
     const float kalmanInitialError,
     const float kalmanInitialQ
@@ -24,7 +24,7 @@ MQTTKalmanPublish::MQTTKalmanPublish(
     EspMQTTClient& client,
     const char* topic,
     const bool retained,
-    const int publishEveryN,
+    const size_t publishEveryN,
     const float kalmanSensitivity
 ) :
     client(client),
