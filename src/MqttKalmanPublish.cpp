@@ -40,8 +40,10 @@ float MQTTKalmanPublish::addMeasurement(float value) {
 
     currentCount++;
     if (currentCount >= publishEveryN) {
-        currentCount = 0;
-        client.publish(topic, String(estimate), retained);
+        bool success = client.publish(topic, String(estimate), retained);
+        if (success) {
+            currentCount = 0;
+        }
     }
 
     return estimate;
