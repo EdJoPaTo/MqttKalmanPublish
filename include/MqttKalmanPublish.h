@@ -23,16 +23,8 @@ public:
 		const bool retained,
 		const size_t publishEveryN,
 		const float kalmanSensitivity,
-		const float kalmanInitialError,
-		const float kalmanInitialQ
-	);
-
-	MQTTKalmanPublish(
-		EspMQTTClient &client,
-		const char *topic,
-		const bool retained,
-		const size_t publishEveryN,
-		const float kalmanSensitivity
+		const float kalmanInitialError = 1000,
+		const float kalmanInitialQ = 0.02
 	);
 
 	float addMeasurement(float value);
