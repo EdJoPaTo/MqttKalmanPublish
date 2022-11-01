@@ -1,37 +1,37 @@
 {
-    "name": "MqttKalmanPublish",
-    "version": "0.1.0",
-    "description": "publish values via a kalman filter to mqtt",
-    "keywords": [
-        "mqtt",
-        "kalman",
-        "publish"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/EdJoPaTo/MqttKalmanPublish.git"
-    },
-    "authors": [
-        {
-            "name": "EdJoPaTo",
-            "email": "mqtt-kalman-publish-arduino-library@edjopato.de",
-            "url": "https://edjopato.de",
-            "maintainer": true
-        }
-    ],
-    "license": "MIT",
-    "frameworks": "arduino",
-    "platforms": "*",
-    "dependencies": [
-        {
-            "owner": "plapointe6",
-            "name": "EspMQTTClient",
-            "version": "^1.8.0"
-        },
-        {
-            "owner": "denyssene",
-            "name": "SimpleKalmanFilter",
-            "version": "^0.1.0"
-        }
-    ]
+	"name": "MqttKalmanPublish",
+	"version": "0.1.0",
+	"description": "publish values via a kalman filter to mqtt",
+	"keywords": [
+		"mqtt",
+		"kalman",
+		"publish"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EdJoPaTo/MqttKalmanPublish.git"
+	},
+	"authors": [
+		{
+			"name": "EdJoPaTo",
+			"email": "mqtt-kalman-publish-arduino-library@edjopato.de",
+			"url": "https://edjopato.de",
+			"maintainer": true
+		}
+	],
+	"license": "MIT",
+	"frameworks": "arduino",
+	"platforms": "*",
+	"dependencies": [
+		{
+			"owner": "plapointe6",
+			"name": "EspMQTTClient",
+			"version": "^1.8.0"
+		},
+		{
+			"owner": "denyssene",
+			"name": "SimpleKalmanFilter",
+			"version": "^0.1.0"
+		}
+	]
 }
