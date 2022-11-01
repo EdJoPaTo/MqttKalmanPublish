@@ -6,8 +6,8 @@
 class MQTTKalmanPublish
 {
 private:
-	EspMQTTClient& client;
-	const char* topic;
+	EspMQTTClient &client;
+	const char *topic;
 	const bool retained;
 
 	const size_t publishEveryN;
@@ -15,10 +15,11 @@ private:
 
 	SimpleKalmanFilter kalman;
 	const float kalmanInitialError;
+
 public:
 	MQTTKalmanPublish(
-		EspMQTTClient& client,
-		const char* topic,
+		EspMQTTClient &client,
+		const char *topic,
 		const bool retained,
 		const size_t publishEveryN,
 		const float kalmanSensitivity,
@@ -27,8 +28,8 @@ public:
 	);
 
 	MQTTKalmanPublish(
-		EspMQTTClient& client,
-		const char* topic,
+		EspMQTTClient &client,
+		const char *topic,
 		const bool retained,
 		const size_t publishEveryN,
 		const float kalmanSensitivity

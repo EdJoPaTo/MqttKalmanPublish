@@ -4,8 +4,8 @@ const float INITIAL_ESTIMATION_ERROR = 1000;
 const float INITIAL_Q = 0.02;
 
 MQTTKalmanPublish::MQTTKalmanPublish(
-	EspMQTTClient& client,
-	const char* topic,
+	EspMQTTClient &client,
+	const char *topic,
 	const bool retained,
 	const size_t publishEveryN,
 	const float kalmanSensitivity,
@@ -21,8 +21,8 @@ MQTTKalmanPublish::MQTTKalmanPublish(
 { }
 
 MQTTKalmanPublish::MQTTKalmanPublish(
-	EspMQTTClient& client,
-	const char* topic,
+	EspMQTTClient &client,
+	const char *topic,
 	const bool retained,
 	const size_t publishEveryN,
 	const float kalmanSensitivity
